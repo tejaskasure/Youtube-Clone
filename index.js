@@ -47,7 +47,7 @@ let popular = async () => {
     try {
       let search = document.querySelector(".search-bar").value;
       let res = await fetch(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBWuaDNXvXZisZwd5oSqrY4fJQvLM2T05k&type=video&q=${search}&maxResults=20`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyAy7-NVCAXqfPZ9whrjBNORxiOfOf6q4ZA&type=video&q=${search}&maxResults=20`
       );
       let data = await res.json();
       showData(data.items);
